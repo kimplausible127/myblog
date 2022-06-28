@@ -12,7 +12,7 @@ class PublishedManager(models.Manager):
 class Post(models.Model):
     STATUS_CHOICES = (
         ('draft', 'Draft'),
-        ('publised', 'Published'),
+        ('published', 'Published'),
     )
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique_for_date='publish')
